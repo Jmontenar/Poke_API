@@ -1,0 +1,238 @@
+.card{
+    width:100%;
+    max-width: 350px;
+    height: 580px;
+    border-radius: 1em;
+    overflow: hidden;
+    border: 5px solid black;
+    transition: transform 150ms ease;
+    cursor: pointer;
+    background-image: linear-gradient(0deg, rgba(222,228,252,1) 0%, rgba(255,255,255,1) 100%);
+    backdrop-filter: blur(10px)
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card_header{
+    height: 210px;
+    width: 100%;
+    background-color: rgb(144,144,144);
+    position:relative;
+}
+.card_avatar{
+    width: 15em;
+    position: absolute;
+    transform: translateX(60px);
+}
+.card_name{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 0.1em;
+}
+.card_type-list{
+    display: flex;
+    justify-content: center;
+    gap: 1.2em;
+    transform: translateY(-45px);
+}
+.card_type-item{
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 0.3em;
+    list-style: none
+}
+.Type{
+    margin-left: 20px;
+    transform: translateY(-5px)
+}
+.Stats{
+    text-align: center;
+    transform: translateY(-62px);
+}
+.Abilities{
+    text-align: center;
+    transform: translateY(-105px)
+}
+.card_type-item:nth-child(2)::before{
+    content: '/';
+    position: absolute;
+    left: -12px;
+}
+.card_hr{
+    border: none;
+    border-top: 1px solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2em;
+    transform: translateY(-50px);
+}
+.card_hr2{
+    border: none;
+    border-top: 1px solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.2em;
+    transform: translateY(-95px);
+}
+.card_stat-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0.5em 1.5em;
+    gap: 0.8em 0.1em;
+    text-align: center;
+    transform: translateY(-60px);
+}
+.card_stat-abilities{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0.5em 1.5em;
+    gap: 0.8em 0.1em;
+    text-align: center;
+    transform: translateY(-60px);
+}
+.card_stat-name{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.bg-grass{
+    background-image: linear-gradient(178.92deg, #7EC6C5, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+.bg-fire{
+    background-image: linear-gradient(176.37deg, #f96d7f -32.26%, #e35825 22.55%, #e8ae1b 125.72%);
+}
+.bg-water{
+    background-image: linear-gradient(179.57deg, #133258 -70.14%, #1479fb 56.16%, #82b2f1 214.85%);
+}
+.bg-normal{
+    background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(161,98,111,1) 100%);
+}
+.bg-fighting{
+    background-image: linear-gradient(0deg, rgba(177,74,48,1) 0%, rgba(196,81,51,1) 100%);
+}
+.bg-flying{
+    background-image: linear-gradient(0deg, rgba(166,99,114,1) 0%, rgba(125,86,94,1) 100%);;
+}
+.bg-ghost{
+    background-image: linear-gradient(0deg, rgba(71,76,166,1) 0%, rgba(79,85,188,1) 100%);;
+}
+.bg-rock{
+    background-image: linear-gradient(0deg, rgba(115,75,15,1) 0%, rgba(180,125,43,1) 100%);
+}
+.bg-dark{
+    background-image: linear-gradient(0deg, rgba(11,11,11,1) 0%, rgba(86,88,87,1) 100%);
+}
+.bg-ice{
+    background-image: linear-gradient(0deg, rgba(145,219,250,1) 0%, rgba(106,195,233,1) 100%)
+}
+.bg-steel{
+    background-image: linear-gradient(0deg, rgba(120,139,133,1) 0%, rgba(180,184,182,1) 100%);
+}
+.bg-dragon{
+    background-image: linear-gradient(0deg, rgba(77,148,157,1) 0%, rgba(129,178,185,1) 100%);;
+}
+.bg-electric{
+    background-image: linear-gradient(0deg, rgba(24,31,151,1) 0%, rgba(82,88,190,1) 100%);
+}
+.bg-fairy{
+    background-image: linear-gradient(0deg, rgba(207,32,91,1) 0%, rgba(226,100,142,1) 100%);
+}
+.bg-bug{
+    background-image: linear-gradient(0deg, rgba(63,180,60,1) 0%, rgba(106,210,104,1) 100%);
+}
+
+
+
+
+.border-grass{
+    border-color: #157775;
+}
+.border-fire{
+    border-color: #ba4013;
+}
+.border-water{
+    border-color: #133258;
+}
+.border-normal{
+    border-color: rgba(34,193,195,1);
+}
+.border-fighting{
+    border-color: rgba(177,74,48,1);
+}
+.border-flying{
+    border-color: rgba(166,99,114,1);
+}
+.border-ghost{
+    border-color: rgba(71,76,166,1);
+}
+.border-rock{
+    border-color: rgba(115,75,15,1);
+}
+.border-dark{
+    border-color: rgba(11,11,11,1);
+}
+.border-ice{
+    border-color: rgba(145,219,250,1);
+}
+.border-steel{
+    border-color: rgba(120,139,133,1);
+}
+.border-dragon{
+    border-color: rgba(77,148,157,1);
+}
+.border-electric{
+    border-color: rgba(24,31,151,1);
+}
+.border-fairy{
+    border-color: rgba(207,32,91,1);
+}
+.border-bug{
+    border-color: rgba(63,180,60,1);
+}
+.color-grass{
+    color: #157775
+}
+.color-fire{
+    color: #ba4013
+}
+.color-water{
+    color: #133258
+}
+.color-normal{
+    color: rgba(34,193,195,1);
+}
+.color-fighting{
+    color: rgba(177,74,48,1);
+}
+.color-flying{
+    color: rgba(166,99,114,1);
+}
+.color-ghost{
+    color: rgba(71,76,166,1);
+}
+.color-rock{
+    color: rgba(115,75,15,1);
+}
+.color-dark{
+    color: rgba(11,11,11,1);
+}
+.color-ice{
+    color: rgba(145,219,250,1);
+}
+.color-steel{
+    color: rgba(120,139,133,1);
+}
+.color-dragon{
+    color: rgba(77,148,157,1);
+}
+.color-electric{
+    color: rgba(24,31,151,1);
+}
+.color-fairy{
+    color: rgba(207,32,91,1);
+}
+.color-bug{
+    color: rgba(63,180,60,1);
+}

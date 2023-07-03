@@ -1,0 +1,84 @@
+.red{
+    background-color: #fe1936;
+    width: 100%;
+    height: 60px;
+}
+.black{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+.pokeball{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pokeballbig{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid;
+    position: absolute;
+    text-align: center;
+    background-image: linear-gradient(#ff3e32 50%, #cfcfd7 40%, #f6f6f6 60%);
+    transform: translateY(-36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.pokeball2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pokeball3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pokeball4{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid
+}
+.pokeball5{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: azure;
+    border: 0.5px solid
+}
+.line1{
+    width: 5px;
+    height: 4px;
+    background-color: black;
+}
+.line2{
+    width: 8px;
+    height: 4px;
+    background-color: black;
+}
+.line3{
+    width: 6px;
+    height: 4px;
+    background-color: black;
+}
+.header img{
+    width: 20em;
+    transform: translateY(-60px);
+    margin-left: 20px;
+}
