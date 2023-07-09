@@ -25,21 +25,23 @@ if(hasError) {
 
 return (
     <div className="pokeinfo_container">
-        <div className="pokeinfo">
+        <section className="pokeinfo front">
         <img src={poke?.sprites.other['official-artwork']['front_default']} alt="" />
         <h1 className="poke_name">{poke?.name}</h1>
         < hr className='card_hr' />
         <h2 className="experience">Base experience: {poke?.base_experience}</h2>
         <h2 className="heigth">Heigth: {poke?.height} cms</h2>
         <h2 className="weigth">Weigth: {poke?.weight} Kg</h2>
-        <span>Moves</span>
+        </section>
+        <section className="back">
+        <h3>Moves</h3>
         <ul className='card_type-list'>
                 {poke?.moves.map(move =>(
                     <li key={move.url}>{move.name}</li>
                 ))
                 }
             </ul>
-        </div>
+        </section>
     </div>
 )
 }

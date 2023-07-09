@@ -17,7 +17,7 @@ const handleSubmit = e =>{
 }
     return (
     <div className="big_container">
-    <div className="home_container">
+    <div className="home_container bounce-in-fwd">
         <img src={ASH} alt='Ash' />
         <div className="info">
         <h2>Hi Trainer</h2>

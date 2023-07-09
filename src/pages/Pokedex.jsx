@@ -44,8 +44,8 @@ console.log(setPokemons)
 
 return (
 <div className='pkdx_container'>
-    <h1 className='podedex_title'><span>Hi</span><span className='podedex_title-name'> {nameTrainer},</span> find here your favorite pokemon</h1>
-    <div className="inf_select">
+    <h1 className='podedex_title bounce-in-fwd'><span>Hi</span><span className='podedex_title-name'> {nameTrainer},</span> find here your favorite pokemon</h1>
+    <div className="inf_select bounce-in-fwd">
     <form onSubmit={handleSubmit}>
         <div className="input_pkdx_container">
         <input placeholder='Write the name of your favorite pokemon' id='pokemon' type="text" className="input_pkdx" />
@@ -54,7 +54,7 @@ return (
     </form>
         <Types setSelectValue={setSelectValue} />
     </div>
-        <div className='pokeCard_container'>
+        <div className='pokeCard_container roll-in-blurred-left'>
             {
                 pokemons?.results.slice((page-1)*perPage, perPage+perPage).map(pokemon=>(
                     <PokeCard
