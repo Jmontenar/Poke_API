@@ -3,7 +3,7 @@ import LOGOPKD from './images/Logo_Pokedex.png'
 
 const Header = () => {
 return (
-    <div>
+    <div className='header_container'>
     <div className="red"></div>
     <div className="pokeball">   
     <div className="pokeballbig">

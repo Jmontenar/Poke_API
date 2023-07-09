@@ -31,7 +31,6 @@ const handleSubmit = e =>{
         <img src={ASHPIKA} alt='Ash-Pika' />
     </div>    
     </div>
-    
 )
 }
 

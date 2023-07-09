@@ -78,7 +78,15 @@
     background-color: black;
 }
 .header img{
-    width: 20em;
-    transform: translateY(-60px);
-    margin-left: 20px;
+    width: 11em;
+    transform: translateY(-35px);
+    /* margin-left: -10px; */
+}
+
+@media screen and (min-width: 720px){
+    .header img{
+        width: 20em;
+        transform: translateY(-60px);
+        margin-left: 20px;
+    }
 }

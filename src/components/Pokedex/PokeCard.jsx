@@ -16,26 +16,27 @@ const handdleClick = () =>{
 }
 
 return (
-    <article onClick={handdleClick} className={`card border-${poke?.types[0].type.name}`}>
+    <div className="box_shadow">
+<article onClick={handdleClick} className={`card border-${poke?.types[0].type.name}`}>
         <header className={ `card_header bg-${poke?.types[0].type.name}`}>
             <img className='card_avatar' src={poke?.sprites.other["official-artwork"]["front_default"]} alt='' />
         </header>
             <h2 className={`card_name color-${poke?.types[0].type.name}`}>{poke?.name}</h2>
-            <p className='Type'>Type</p>
             <ul className='card_type-list'>
                 {poke?.types.map(slot =>(
                     <li className="card_type-item" key={slot.type.url}>{slot.type.name}</li>
                 ))
                 }
             </ul>
+            <p className='Type'>Types</p>
             < hr className='card_hr' />
-            <p className="Stats">Stats</p>
+            <p className='Stats'>Stats</p>
             <ul className='card_stat-list'>
                 {
                 poke?.stats.map(stat=>(
-                    <li className="card_type-item" key={stat.stat.url}>
-                        <span>{stat.stat.name}</span>
-                        <span>{stat.base_stat}</span>
+                    <li className="card_type-item item_value" key={stat.stat.url}>
+                        <span>{stat.stat.name} </span>
+                        <span className={`value color-${poke?.types[0].type.name}`}> {stat.base_stat}</span>
                     </li>
                 ))
                 }
@@ -53,6 +54,8 @@ return (
                 }
             </ul>
     </article>
+    </div>
+    
 )
 }
 

@@ -1,15 +1,22 @@
 .types_container {
-    width: 100%;
-    max-width: 250px;
-    height: 47px;
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius:10px;
     border: 1.5px solid lightgrey;
     box-shadow: 0px 0px 20px -18px;
-    margin-left: 40em;
     outline: none;
-    transform: translateY(-49px);
     cursor: pointer;
-    display: flex;
+    background: #fe1936;
+    background: linear-gradient(0deg, rgb(177, 16, 16) 0%, rgb(243, 66, 66) 100%);
+    border: none;
+    text-align: center;
+    color: #fa950a;
+    font-weight: bold;
+
+}
+.types_container:hover {
+    background: #fe1936;
+    background: linear-gradient(0deg, rgb(177, 16, 16) 0%, rgb(250, 116, 116) 100%);
+    color: #e89f3a
 }
 

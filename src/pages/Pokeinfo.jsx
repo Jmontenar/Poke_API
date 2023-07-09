@@ -28,9 +28,10 @@ return (
         <div className="pokeinfo">
         <img src={poke?.sprites.other['official-artwork']['front_default']} alt="" />
         <h1 className="poke_name">{poke?.name}</h1>
-        <h2>Base experience: {poke?.base_experience}</h2>
-        <h2>Heigth: {poke?.height} cms</h2>
-        <h2>Weigth: {poke?.weight} Kg</h2>
+        < hr className='card_hr' />
+        <h2 className="experience">Base experience: {poke?.base_experience}</h2>
+        <h2 className="heigth">Heigth: {poke?.height} cms</h2>
+        <h2 className="weigth">Weigth: {poke?.weight} Kg</h2>
         <span>Moves</span>
         <ul className='card_type-list'>
                 {poke?.moves.map(move =>(
@@ -39,7 +40,6 @@ return (
                 }
             </ul>
         </div>
-
     </div>
 )
 }
